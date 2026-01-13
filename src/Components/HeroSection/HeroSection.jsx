@@ -49,7 +49,7 @@ export default function HeroSection() {
             <div className="flex justify-center items-center lg:h-full px-4 sm:px-8 lg:px-12 pt-4 lg:pt-0">
               <div className="hero-card shadow-xl rounded-2xl overflow-hidden relative w-full lg:max-w-none cursor-pointer md:min-h-[300px] lg:h-full">
                 <img
-                  src="/public/pexels-moose-photos-170195-1586999.jpg"
+                  src="/pexels-moose-photos-170195-1586999.jpg"
                   alt=""
                   className="w-full h-110 object-cover"
                 />

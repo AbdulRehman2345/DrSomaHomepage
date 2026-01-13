@@ -119,10 +119,10 @@ const AboutDoctor = () => {
   ];
 
   const certificateImages = [
-    { src: "/public/ce1.jpg" },
-    { src: "/public/ce2.jpg" },
-    { src: "/public/ce3.jpg" },
-    { src: "/public/ce4.jpg" },
+    { src: "/ce1.jpg" },
+    { src: "/ce2.jpg" },
+    { src: "/ce3.jpg" },
+    { src: "/ce4.jpg" },
   ];
 
   return (
@@ -159,7 +159,7 @@ const AboutDoctor = () => {
           <div className="lg:col-span-4 space-y-8">
             <div className="relative group overflow-hidden rounded-[2.5rem] bg-black">
               <img
-                src="/public/dr_soma_pic.png"
+                src="/dr_soma_pic.png"
                 alt="Dr. Soma Sathappan"
                 className="w-full aspect-[4/5] object-cover object-top opacity-90 group-hover:scale-105 transition-transform duration-700 ease-out"
                 onError={(e) => {
