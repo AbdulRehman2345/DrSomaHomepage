@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="lg:w-1/3 space-y-4">
             <a href="/" className="flex items-center">
               <img
-                src="/public/dr_soma_logo.png"
+                src="/dr_soma_logo.png"
                 className="h-11 w-auto me-3 object-contain"
                 alt="Dr Soma Logo"
               />
