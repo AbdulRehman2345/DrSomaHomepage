@@ -1,0 +1,185 @@
+header .grid {
+  justify-content: space-between !important;
+  align-items: center !important;
+  margin-top: 4px;
+}
+
+header .gap-4 {
+  gap: 0.75rem !important;
+}
+
+header nav ul {
+  justify-content: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+header {
+  padding-top: 0.4rem;
+  padding-bottom: 0.85rem;
+  transition: background-color 0.4s ease-out, 
+              backdrop-filter 0.4s ease-out;
+  will-change: background-color, backdrop-filter;
+  transform: translateZ(0); /* forces GPU acceleration */
+}
+
+/* Updated .nav-link to remove hardcoded white color */
+.nav-link {
+  position: relative;
+  font-weight: 500;
+  padding-bottom: 4px;
+  /* The color is now set by Tailwind classes in Header.tsx */
+  transition: color 0.2s ease; 
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 3px;
+  /* Updated color for the hover underline to a blue/primary color */
+  background: #EA622F;
+  border-radius: 2px;
+  transition: width 260ms ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ---------------- Hamburger ---------------- */
+.hamburger-btn {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 8px;
+  z-index: 60;
+}
+
+/* 1. Remove the hardcoded white from the base .bar class */
+.hamburger-btn .bar {
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  /* Remove background-color from here */
+}
+
+/* 2. When NOT scrolled (Transparent header / White background) */
+header.not-scrolled .hamburger-btn .bar {
+  background-color: #374151; /* Dark Gray/Black so it's visible */
+}
+
+/* 3. When SCROLLED (Black header / Dark background) */
+header.scrolled .hamburger-btn .bar {
+  background-color: #ffffff; /* White so it's visible */
+}
+
+/* --- SIDEBAR STYLES (No significant change, ensuring they are present) --- */
+.mobile-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 40;
+}
+
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 78%;
+  max-width: 360px;
+  height: 100vh;
+  background: black;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.25rem 1.25rem;
+  box-shadow: -12px 0 30px rgba(0,0,0,0.6);
+  animation: slideInFromRight 300ms ease forwards;
+}
+@keyframes slideInFromRight {
+  from { transform: translateX(100%); }
+  to   { transform: translateX(0); }
+}
+
+.sidebar-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 60;
+}
+.sidebar-close .close-line {
+  position: absolute;
+  width: 18px;
+  height: 2px;
+  background: white;
+  border-radius: 2px;
+}
+.sidebar-close .close-line:first-child { transform: rotate(45deg); }
+.sidebar-close .close-line:last-child  { transform: rotate(-45deg); }
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+.mobile-link {
+  position: relative;
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  transition: color 0.3s ease;
+}
+
+.mobile-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color:#EA622F;
+  transition: width 0.3s ease;
+}
+
+.mobile-link:hover {
+  color: #EA622F; /* Primary color */
+}
+
+.mobile-link:hover::after {
+  width: 100%;
+}
+
+.mobile-footer {
+  margin-top: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .mobile-sidebar,
+  .mobile-overlay,
+  .hamburger-btn {
+    display: none !important;
+  }
+}
