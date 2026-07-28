@@ -1,6 +1,6 @@
 # Dr. Soma — Premium Clinic Landing Page
 
-[![Live Demo](https://dr-soma-homepage-11q5.vercel.app/](https://dr-soma-homepage-x67n.vercel.app/))
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-View%20Site-brightgreen?style=for-the-badge)](https://dr-soma-homepage-x67n.vercel.app/)
 
 A high-end, design-forward landing page built for a plastic surgery and aesthetic medicine practice. The project focuses on premium visual storytelling — bold typography, a bento-grid layout, smooth micro-interactions, and a modern black-and-orange brand palette — designed to build trust and convert visitors into consultations.
 
@@ -8,7 +8,7 @@ A high-end, design-forward landing page built for a plastic surgery and aestheti
 
 This project was built as a frontend design exercise: take a real-world, high-stakes industry (aesthetic medicine, where trust and visual polish directly affect conversions) and design a landing page that feels premium, credible, and modern. The result blends editorial-style typography, an animated bento-grid stats section, service highlights, doctor credentials, and a certifications gallery into a single cohesive experience.
 
-**Live demo:** [dr-soma-homepage-11q5.vercel.app](https://dr-soma-homepage-11q5.vercel.app/)
+**Live demo:** [dr-soma-homepage-x67n.vercel.app](https://dr-soma-homepage-x67n.vercel.app/)
 
 ## Features
 
