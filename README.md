@@ -1,16 +1,79 @@
-# React + Vite
+# Dr. Soma — Premium Clinic Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-View%20Site-brightgreen?style=for-the-badge)](https://dr-soma-homepage-11q5.vercel.app/)
 
-Currently, two official plugins are available:
+A high-end, design-forward landing page built for a plastic surgery and aesthetic medicine practice. The project focuses on premium visual storytelling — bold typography, a bento-grid layout, smooth micro-interactions, and a modern black-and-orange brand palette — designed to build trust and convert visitors into consultations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
 
-## React Compiler
+This project was built as a frontend design exercise: take a real-world, high-stakes industry (aesthetic medicine, where trust and visual polish directly affect conversions) and design a landing page that feels premium, credible, and modern. The result blends editorial-style typography, an animated bento-grid stats section, service highlights, doctor credentials, and a certifications gallery into a single cohesive experience.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Live demo:** [dr-soma-homepage-11q5.vercel.app](https://dr-soma-homepage-11q5.vercel.app/)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Bold, editorial-style hero section with striking typography
+- Animated bento-grid layout showcasing key stats (years of experience, patient satisfaction, personalized care, technology)
+- Service highlights across core procedure categories with custom iconography
+- "About the Doctor" section with credentials, values, and an interactive certifications gallery (click-to-expand modal view)
+- Rotating credentials/updates banner
+- Fully responsive layout across desktop, tablet, and mobile
+- Smooth hover states and transition-driven micro-interactions throughout
+
+## Built With
+
+<p>
+  <img src="https://skillicons.dev/icons?i=react,vite,tailwind,js" />
+</p>
+
+- **React 19** — Component-based UI architecture
+- **Vite** — Fast build tooling and development server
+- **Tailwind CSS 4** — Utility-first styling for the entire interface
+- **Lucide React & React Icons** — Icon libraries used throughout the design
+
+## Project Structure
+
+```
+DrSomaHomepage/
+├── src/
+│   ├── Components/
+│   │   ├── Header/          # Site navigation
+│   │   ├── HeroSection/     # Landing hero section
+│   │   └── Footer/          # Site footer
+│   ├── Pages/
+│   │   └── home.jsx          # Main page — services, about, stats, certifications, credentials
+│   ├── App.jsx                # Root application component
+│   └── main.jsx                # Application entry point
+├── public/                    # Images and static assets
+├── vite.config.js
+└── package.json
+```
+
+## Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/AbdulRehman2345/DrSomaHomepage.git
+```
+
+Install dependencies and run the development server:
+
+```bash
+npm install
+npm run dev
+```
+
+## Purpose
+
+This project was built to sharpen frontend design skills in a real-world, high-polish context — translating a brand and industry with high trust requirements into a clean, modern, conversion-focused interface using React, Tailwind, and thoughtful micro-interaction design.
+
+## Author
+
+**Abdul Rehman** — Software Engineer
+
+[LinkedIn](https://www.linkedin.com/in/abdul-rehman-750208312)
+
+## License
+
+This project is open source and available for reference. Feel free to explore the code.
